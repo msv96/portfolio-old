@@ -1,0 +1,101 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Capriola', sans-serif;
+}
+.header {
+    background-color: hsl(210, 10%, 15%);
+    font-family: sans-serif;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid hsl(190, 100%, 50%);
+}
+.toplist {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.list > li {
+    display: inline;
+}
+.links {
+    text-decoration: none;
+    color: white;
+}
+.links:hover {
+    color: hsl(330, 100%, 50%);
+}
+.content {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.2rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(210, 10%, 15%);
+    padding: 200px 0px;
+}
+.image {
+    width: 300px;
+}
+.intro {
+    line-height: 50px;
+}
+.myname {
+    color: hsl(40, 100%, 50%);
+    font-weight: 500;
+}
+.btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    border: 3px solid hsl(182, 80%, 40%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.btn1,.btn2:hover {
+    background-color: transparent;
+    transition: all 0.2s;
+}
+.btn2,.btn1:hover {
+    background-color: hsl(182, 80%, 40%);
+    transition: all 0.2s;
+}
+.btn3 {
+    font-size: 3.5rem;
+    border: none;
+    padding: 15px;
+    background-color: transparent;
+}
+.about {
+    text-align: center;
+    background-color: white;
+}
+.card {
+    font-size: 1.2rem;
+    color: hsl(330, 100%, 50%);
+    position: relative;
+    top: -60px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .list > li {
+        font-size: 1rem;
+        margin: 10px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    .list > li {
+        margin: 10px 20px;
+    }
+}
+@media (min-width: 769px) {
+    .list > li {
+        margin: 10px 30px;
+    }
+}
