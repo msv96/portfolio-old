@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
 import Home from "./Home";
+import Projects from "./Projects";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
             </header>
             <Home />
             <About />
+            <Projects />
             <a href="#home" className="to_top">
                 <button type="submit" className="btn3">
                     <i class="far fa-angle-up"></i>
