@@ -2,7 +2,7 @@ import React from "react";
 
 function Projects() {
     return (
-        <div className="project">
+        <div id="projects" className="project">
             <svg
                 preserveAspectRatio="none"
                 viewBox="0 0 100 100"
@@ -17,7 +17,7 @@ function Projects() {
                     stroke="hsl(210, 10%, 15%)"
                 ></path>
             </svg>
-            <div id="projects" className="projects">
+            <div className="projects">
                 <div className="card">PROJECTS</div>
                 <div className="cardline"></div>
             </div>

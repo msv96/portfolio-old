@@ -20,11 +20,6 @@ function App() {
                             </a>
                         </li>
                         <li>
-                            <a href="#education" className="links">
-                                Education
-                            </a>
-                        </li>
-                        <li>
                             <a href="#projects" className="links">
                                 Projects
                             </a>

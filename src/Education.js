@@ -2,7 +2,7 @@ import React from 'react'
 
 function Education() {
     return (
-        <div className="edu">
+        <div id="education" className="edu">
             <svg
                 preserveAspectRatio="none"
                 viewBox="0 0 100 100"
@@ -17,7 +17,7 @@ function Education() {
                     stroke="hsl(210, 10%, 15%)"
                 ></path>
             </svg>
-            <div id="education" className="education">
+            <div className="education">
                 <div className="card">EDUCATION</div>
                 <div className="cardline"></div>
             </div>

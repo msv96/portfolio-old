@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
     return (
-        <div className="abt">
+        <div id="about" className="abt">
             <svg
                 preserveAspectRatio="none"
                 viewBox="0 0 100 100"
@@ -17,7 +17,7 @@ function About() {
                     stroke="hsl(210, 10%, 15%)"
                 ></path>
             </svg>
-            <div id="about" className="about">
+            <div className="about">
                 <div className="card">ABOUT</div>
                 <div className="cardline"></div>
                 <div className="about_content">
@@ -30,8 +30,7 @@ function About() {
                         <h3>Who's this guy?</h3>
                         <div className="about_me">
                             Lives in Erode. Looking for a developer job where I
-                            can learn more and contibute my knowlodge to the
-                            organization.
+                            can learn more and contribute my knowlodge to the organization.
                         </div>
                     </div>
                 </div>
