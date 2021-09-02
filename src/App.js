@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./About";
+import Contact from "./Contact";
 import Home from "./Home";
 import Projects from "./Projects";
 
@@ -35,11 +36,10 @@ function App() {
             <Home />
             <About />
             <Projects />
-            <a href="#home" className="to_top">
-                <button type="submit" className="btn3">
-                    <i class="far fa-angle-up"></i>
-                </button>
-            </a>
+            <Contact />
+            <footer className="foot">
+                Portfolio of Srinivas
+            </footer>
         </>
     );
 }

@@ -20,6 +20,62 @@ function Projects() {
             <div className="projects">
                 <div className="card">PROJECTS</div>
                 <div className="cardline"></div>
+                <div className="siteflex">
+                    <a
+                        href="https://srini-task-7.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link2"
+                    >
+                        <img
+                            src="./assets/1.png"
+                            alt="first-site"
+                            className="site"
+                        />
+                        <div className="textpad">Simple Dictionary Site</div>
+                    </a>
+                    <a
+                        href="https://srini-react-3.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link2"
+                    >
+                        <img
+                            src="./assets/2.png"
+                            alt="first-site"
+                            className="site"
+                        />
+                        <div className="textpad">Simple Shopping Cart Site</div>
+                    </a>
+                    <a
+                        href="https://srini-task-8.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link2"
+                    >
+                        <img
+                            src="./assets/3.png"
+                            alt="first-site"
+                            className="site"
+                        />
+                        <div className="textpad">
+                            Simple IP Information Site
+                        </div>
+                    </a>
+                    <a
+                        href="https://srini-task-6.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link2"
+                    >
+                        <img
+                            src="./assets/4.png"
+                            alt="first-site"
+                            className="site"
+                        />
+                        <div className="textpad">Simple News Site</div>
+                    </a>
+                </div>
             </div>
         </div>
     );

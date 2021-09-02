@@ -5,14 +5,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Capriola', sans-serif;
+    font-family: "Capriola", sans-serif;
 }
 .header {
     background-color: hsl(210, 10%, 15%);
     font-family: sans-serif;
     color: white;
     padding: 20px;
-    border-bottom: 3px solid hsl(182, 100%, 50%);
+    border-bottom: 3px solid hsl(182, 100%, 40%);
     position: fixed;
     width: 100%;
 }
@@ -35,13 +35,13 @@ body {
     color: hsl(330, 100%, 50%);
 }
 .content {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 300;
     text-align: center;
     font-size: 2.2rem;
     color: hsl(0, 0%, 100%);
     background-color: hsl(210, 10%, 15%);
-    padding: 200px 0px;
+    padding: 250px 0px;
 }
 .image {
     width: 200px;
@@ -54,7 +54,7 @@ body {
     font-weight: 500;
 }
 .btn {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     border: 3px solid hsl(182, 100%, 40%);
     color: hsl(0, 0%, 100%);
@@ -63,29 +63,37 @@ body {
     margin: 20px;
     cursor: pointer;
 }
-.btn1,.btn2:hover {
+.btn1,
+.btn2:hover {
     background-color: transparent;
     transition: all 0.2s;
 }
-.btn2,.btn1:hover {
+.btn2,
+.btn1:hover {
     background-color: hsl(182, 100%, 40%);
     transition: all 0.2s;
 }
-.btn3 {
-    font-size: 3.5rem;
-    border: none;
-    padding: 15px;
-    background-color: transparent;
+.btn3:hover {
+    background-color: hsl(182, 100%, 40%);
 }
 .project {
     background-color: hsl(210, 10%, 15%);
+    padding-bottom: 50px;
 }
-.abt {
+.abt,
+.contactme {
+    text-align: center;
     background-color: white;
 }
-.about, .education, .projects {
+.about,
+.education,
+.projects {
     text-align: center;
     margin: 150px 0px;
+}
+.contact {
+    text-align: center;
+    margin: 150px 0px 100px 0px;
 }
 .card {
     font-size: 2rem;
@@ -111,16 +119,94 @@ body {
 .about_me {
     line-height: 25px;
     width: 300px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 .hexagon {
     color: hsl(182, 100%, 40%);
     font-size: 4rem;
 }
-
-@media (min-width: 320px) and (max-width: 576px) {
+.siteflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 150px 0px;
 }
-@media (min-width: 577px) and (max-width: 768px) {
+.site {
+    width: 300px;
+    border-radius: 5px;
 }
-@media (min-width: 769px) {
+.link2 {
+    text-decoration: none;
+    color: white;
+}
+.link2:hover {
+    color: hsl(182, 100%, 40%);
+}
+.textpad {
+    padding: 25px 0px;
+}
+.form {
+    margin: 50px;
+}
+.inputbox {
+    font-family: "Capriola", sans-serif;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+    padding: 10px;
+    width: 300px;
+    resize: none;
+}
+.inputbox::placeholder {
+    color: white;
+}
+.btn4 {
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: hsl(40, 100%, 50%);
+}
+.link5,
+.link55,
+.link555 {
+    font-size: 3rem;
+    text-decoration: none;
+    margin: 40px;
+}
+.link5 {
+    color: hsl(201, 100%, 35%);
+}
+.link55 {
+    color: hsl(0, 0%, 0%);
+}
+.link555 {
+    color: hsl(0, 100%, 50%);
+}
+.link5:hover,
+.link55:hover,
+.link555:hover {
+    color: hsl(330, 100%, 50%);
+}
+.to_top {
+    color: white;
+    font-size: 3.5rem;
+    padding: 10px;
+    background-color: hsl(330, 100%, 50%);
+}
+.foot {
+    background-color: hsl(210, 10%, 15%);
+    color: hsl(330, 100%, 50%);
+    border-top: 2px solid hsl(182, 100%, 40%);
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 3rem;
 }
