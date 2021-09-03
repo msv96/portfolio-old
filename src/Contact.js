@@ -1,11 +1,5 @@
 import React from "react";
 
-let handleSubmit = (e) => {
-    e.target[0].value = "";
-    e.target[1].value = "";
-    e.target[2].value = "";
-};
-
 function Contact() {
     return (
         <div id="contact" className="contactme">
@@ -30,37 +24,41 @@ function Contact() {
                     name="contact"
                     method="POST"
                     data-netlify="true"
-                    onSubmit={(e) => handleSubmit(e)}
                     id="usrform"
                     className="form"
-                    action="POST"
                 >
-                    <input
-                        name="name"
-                        type="text"
-                        className="inputbox"
-                        placeholder="Your Name"
-                        required
-                    />
-                    <br />
-                    <input
-                        name="email"
-                        type="email"
-                        className="inputbox"
-                        placeholder="Your Email ID"
-                        required
-                    />
-                    <br />
-                    <textarea
-                        rows="6"
-                        cols="22"
-                        name="comment"
-                        form="usrform"
-                        placeholder="Your Message"
-                        className="inputbox"
-                    ></textarea>
-                    <br />
-                    <button type="submit" className="btn4">SUBMIT</button>
+                    <input type="hidden" name="contact" value="contact" />
+                    <div>
+                        <input
+                            name="name"
+                            type="text"
+                            className="inputbox"
+                            placeholder="Your Name"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <input
+                            name="email"
+                            type="email"
+                            className="inputbox"
+                            placeholder="Your Email ID"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <textarea
+                            rows="6"
+                            cols="22"
+                            name="comment"
+                            form="usrform"
+                            placeholder="Your Message"
+                            className="inputbox"
+                        ></textarea>
+                    </div>
+                    <button type="submit" className="btn4">
+                        SUBMIT
+                    </button>
                 </form>
                 <a
                     href="https://linkedin.com/in/msv96"
