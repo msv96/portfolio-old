@@ -20,7 +20,7 @@ function Projects() {
             <div className="projects">
                 <div className="card">PROJECTS</div>
                 <div className="cardline"></div>
-                <div className="siteflex">
+                <div className="siteflex flex">
                     <a
                         href="https://srini-task-7.netlify.app/"
                         target="_blank"

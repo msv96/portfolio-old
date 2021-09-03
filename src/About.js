@@ -20,7 +20,7 @@ function About() {
             <div className="about">
                 <div className="card">ABOUT</div>
                 <div className="cardline"></div>
-                <div className="about_content">
+                <div className="about_content flex">
                     <img
                         src="./assets/img.png"
                         alt="myimage"
@@ -30,14 +30,15 @@ function About() {
                         <h3>Who's this guy?</h3>
                         <div className="about_me">
                             Lives in Erode. Looking for a developer job where I
-                            can learn more and contribute my knowlodge to the organization.
+                            can learn more and contribute my knowlodge to the
+                            organization.
                         </div>
                     </div>
                 </div>
-                <div className="about_content">
+                <div className="about_content flex">
                     <div>
-                        <div class="hexagon">
-                            <i class="far fa-tachometer-alt"></i>
+                        <div className="hexagon">
+                            <i className="far fa-tachometer-alt"></i>
                         </div>
                         <h2>Fast</h2>
                         <div className="about_me">
@@ -46,8 +47,8 @@ function About() {
                         </div>
                     </div>
                     <div>
-                        <div class="hexagon">
-                            <i class="far fa-mobile-alt"></i>
+                        <div className="hexagon">
+                            <i className="far fa-mobile-alt"></i>
                         </div>
                         <h2>Responsive</h2>
                         <div className="about_me">
@@ -55,8 +56,8 @@ function About() {
                         </div>
                     </div>
                     <div>
-                        <div class="hexagon">
-                            <i class="far fa-lightbulb"></i>
+                        <div className="hexagon">
+                            <i className="far fa-lightbulb"></i>
                         </div>
                         <h2>Intuitive</h2>
                         <div className="about_me">
@@ -64,8 +65,8 @@ function About() {
                         </div>
                     </div>
                     <div>
-                        <div class="hexagon">
-                            <i class="far fa-rocket"></i>
+                        <div className="hexagon">
+                            <i className="far fa-rocket"></i>
                         </div>
                         <h2>Dynamic</h2>
                         <div className="about_me">

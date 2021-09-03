@@ -37,9 +37,7 @@ function App() {
             <About />
             <Projects />
             <Contact />
-            <footer className="foot">
-                Portfolio of Srinivas
-            </footer>
+            <footer className="foot">Portfolio of Srinivas</footer>
         </>
     );
 }

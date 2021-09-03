@@ -1,8 +1,10 @@
 import React from "react";
 
-let done = (e) => {
+let handleSubmit = (e) => {
     e.preventDefault();
-    alert("Submitted Successfully");
+    e.target[0].value = "";
+    e.target[1].value = "";
+    e.target[2].value = "";
 };
 
 function Contact() {
@@ -29,9 +31,10 @@ function Contact() {
                     name="contact"
                     method="POST"
                     data-netlify="true"
-                    onSubmit={(e) => done(e)}
+                    onSubmit={(e) => handleSubmit(e)}
                     id="usrform"
                     className="form"
+                    action="POST"
                 >
                     <input
                         name="name"
@@ -58,7 +61,7 @@ function Contact() {
                         className="inputbox"
                     ></textarea>
                     <br />
-                    <input type="submit" value="SUBMIT" className="btn4" />
+                    <button type="submit" className="btn4">SUBMIT</button>
                 </form>
                 <a
                     href="https://linkedin.com/in/msv96"
@@ -66,7 +69,7 @@ function Contact() {
                     className="link5"
                     rel="noreferrer"
                 >
-                    <i class="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a
                     href="https://github.com/msv96"
@@ -74,7 +77,7 @@ function Contact() {
                     className="link55"
                     rel="noreferrer"
                 >
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                 </a>
                 <a
                     href="mailto:msrini1100@gmail.com"
@@ -82,11 +85,11 @@ function Contact() {
                     className="link555"
                     rel="noreferrer"
                 >
-                    <i class="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"></i>
                 </a>
             </div>
             <a href="#home" className="to_top">
-                <i class="far fa-angle-double-up"></i>
+                <i className="far fa-angle-double-up"></i>
             </a>
         </div>
     );
