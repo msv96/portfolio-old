@@ -23,6 +23,7 @@ function Contact() {
                 <form
                     name="contact v1"
                     method="POST"
+                    netlify
                     data-netlify="true"
                     id="usrform"
                     className="form"
