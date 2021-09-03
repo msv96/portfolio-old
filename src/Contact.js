@@ -1,6 +1,32 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 
 function Contact() {
+    const [name, setname] = useState("");
+    const [mail, setmail] = useState("");
+    const [msg, setmsg] = useState("");
+    const [stat, setstat] = useState(false);
+
+    let handleSubmit = async (e) => {
+        e.preventDefault();
+        let date = new Date().toString();
+        setstat(true);
+        try {
+            setname("");
+            setmail("");
+            setmsg("");
+            await axios.post(
+                `https://60f460de3cb0870017a8a216.mockapi.io/comment`,
+                { name, mail, msg, date }
+            );
+            setTimeout(() => {
+                setstat(false);
+            }, 2000);
+        } catch (error) {
+            setstat(false);
+            console.log(error);
+        }
+    };
     return (
         <div id="contact" className="contactme">
             <svg
@@ -20,14 +46,7 @@ function Contact() {
             <div className="contact">
                 <div className="card">CONTACT</div>
                 <div className="cardline"></div>
-                <form
-                    name="contact v1"
-                    method="post"
-                    netlify="true"
-                    data-netlify="true"
-                    className="form"
-                >
-                    <input type="hidden" name="form-name" value="contact v1" />
+                <form method="post" className="form" onSubmit={handleSubmit}>
                     <div>
                         <label>
                             Name
@@ -36,6 +55,8 @@ function Contact() {
                                 name="name"
                                 type="text"
                                 className="inputbox"
+                                value={name}
+                                onChange={(e) => setname(e.target.value)}
                                 required
                             />
                         </label>
@@ -48,6 +69,8 @@ function Contact() {
                                 name="emailid"
                                 type="email"
                                 className="inputbox"
+                                value={mail}
+                                onChange={(e) => setmail(e.target.value)}
                                 required
                             />
                         </label>
@@ -61,12 +84,15 @@ function Contact() {
                                 cols="22"
                                 name="message"
                                 className="inputbox"
+                                value={msg}
+                                onChange={(e) => setmsg(e.target.value)}
                             ></textarea>
                         </label>
                     </div>
                     <button type="submit" className="btn4">
                         SUBMIT
                     </button>
+                    {stat ? <p>Message Sent Successfully</p> : ""}
                 </form>
                 <a
                     href="https://linkedin.com/in/msv96"
