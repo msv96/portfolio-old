@@ -5,11 +5,9 @@ function Home() {
         <>
             <div className="content" id="home">
                 <div className="intro">
-                    Hi, I'm <span className="myname">Srinivas</span>.
+                    Hello, I'm <span className="myname">Srinivas</span>.
                     <br />
-                    Learning Full-Stack Developer
-                    <br />
-                    Course at GUVI.
+                    A full stack web developer.
                 </div>
                 <a
                     href="https://drive.google.com/file/d/1l9QeXd27c1imiMJbhtzPgpe19-jGgWn2/view?usp=sharing"
@@ -17,12 +15,12 @@ function Home() {
                     rel="noreferrer"
                 >
                     <button type="submit" className="btn btn1">
-                        View Resume
+                        View My Résumé
                     </button>
                 </a>
                 <a href="./assets/Srini Resume.pdf">
                     <button type="submit" className="btn btn2">
-                        Download Resume
+                        Download Résumé
                     </button>
                 </a>
             </div>

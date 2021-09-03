@@ -2,37 +2,34 @@ import axios from "axios";
 import React, { useState } from "react";
 
 function Contact() {
-    const [name, setname] = useState("");
-    const [mail, setmail] = useState("");
-    const [msg, setmsg] = useState("");
-    const [stat, setstat] = useState(false);
+    const [serverState, setServerState] = useState(false);
 
     let handleSubmit = async (e) => {
         e.preventDefault();
-        let date = new Date().toString();
-        setstat(true);
+        const form = e.target;
+        setServerState(true);
         try {
-            setname("");
-            setmail("");
-            setmsg("");
-            await axios.post(
-                `https://60f460de3cb0870017a8a216.mockapi.io/comment`,
-                { name, mail, msg, date }
-            );
-            setTimeout(() => {
-                setstat(false);
-            }, 2000);
+            await axios({
+                method: "post",
+                url: "https://formspree.io/f/xknkkzkq",
+                data: new FormData(form),
+            });
+            setServerState(false);
         } catch (error) {
-            setstat(false);
+            setServerState(false);
             console.log(error);
         }
+        e.target[0].value = "";
+        e.target[1].value = "";
+        e.target[2].value = "";
     };
+
     return (
         <div id="contact" className="contactme">
             <div className="contact">
                 <div className="card">CONTACT</div>
                 <div className="cardline"></div>
-                <form method="post" className="form" onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit}>
                     <div>
                         <label>
                             Name
@@ -41,8 +38,6 @@ function Contact() {
                                 name="name"
                                 type="text"
                                 className="inputbox"
-                                value={name}
-                                onChange={(e) => setname(e.target.value)}
                                 required
                             />
                         </label>
@@ -55,8 +50,6 @@ function Contact() {
                                 name="emailid"
                                 type="email"
                                 className="inputbox"
-                                value={mail}
-                                onChange={(e) => setmail(e.target.value)}
                                 required
                             />
                         </label>
@@ -70,15 +63,17 @@ function Contact() {
                                 cols="22"
                                 name="message"
                                 className="inputbox"
-                                value={msg}
-                                onChange={(e) => setmsg(e.target.value)}
                             ></textarea>
                         </label>
                     </div>
-                    <button type="submit" className="btn4">
+                    <button
+                        type="submit"
+                        className="btn4"
+                        disabled={serverState}
+                    >
                         SUBMIT
                     </button>
-                    {stat ? <p>Message Sent Successfully</p> : ""}
+                    {serverState ? <p>Message Sent Successfully</p> : ""}
                 </form>
                 <a
                     href="https://linkedin.com/in/msv96"

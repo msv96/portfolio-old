@@ -9,28 +9,18 @@ function App() {
         <>
             <header className="header">
                 <nav className="toplist">
-                    <ul className="list">
-                        <li>
-                            <a href="#home" className="links">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about" className="links">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" className="links">
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" className="links">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="#home" className="links">
+                        HOME
+                    </a>
+                    <a href="#about" className="links">
+                        ABOUT
+                    </a>
+                    <a href="#projects" className="links">
+                        PROJECTS
+                    </a>
+                    <a href="#contact" className="links">
+                        CONTACT
+                    </a>
                 </nav>
             </header>
             <Home />
