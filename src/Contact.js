@@ -22,39 +22,47 @@ function Contact() {
                 <div className="cardline"></div>
                 <form
                     name="contact v1"
-                    method="POST"
-                    netlify
-                    id="usrform"
+                    method="post"
+                    netlify="true"
+                    data-netlify="true"
                     className="form"
                 >
                     <input type="hidden" name="form-name" value="contact v1" />
                     <div>
-                        <input
-                            name="name"
-                            type="text"
-                            className="inputbox"
-                            placeholder="Your Name"
-                            required
-                        />
+                        <label>
+                            Name
+                            <br />
+                            <input
+                                name="name"
+                                type="text"
+                                className="inputbox"
+                                required
+                            />
+                        </label>
                     </div>
                     <div>
-                        <input
-                            name="email"
-                            type="email"
-                            className="inputbox"
-                            placeholder="Your Email ID"
-                            required
-                        />
+                        <label>
+                            Email ID
+                            <br />
+                            <input
+                                name="emailid"
+                                type="email"
+                                className="inputbox"
+                                required
+                            />
+                        </label>
                     </div>
                     <div>
-                        <textarea
-                            rows="6"
-                            cols="22"
-                            name="message"
-                            form="usrform"
-                            placeholder="Your Message"
-                            className="inputbox"
-                        ></textarea>
+                        <label>
+                            Comments
+                            <br />
+                            <textarea
+                                rows="6"
+                                cols="22"
+                                name="message"
+                                className="inputbox"
+                            ></textarea>
+                        </label>
                     </div>
                     <button type="submit" className="btn4">
                         SUBMIT
