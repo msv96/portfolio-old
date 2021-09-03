@@ -24,7 +24,6 @@ function Contact() {
                     name="contact v1"
                     method="POST"
                     netlify
-                    data-netlify="true"
                     id="usrform"
                     className="form"
                 >
@@ -51,7 +50,7 @@ function Contact() {
                         <textarea
                             rows="6"
                             cols="22"
-                            name="comment"
+                            name="message"
                             form="usrform"
                             placeholder="Your Message"
                             className="inputbox"
