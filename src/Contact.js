@@ -21,13 +21,13 @@ function Contact() {
                 <div className="card">CONTACT</div>
                 <div className="cardline"></div>
                 <form
-                    name="contact"
+                    name="contact v1"
                     method="POST"
                     data-netlify="true"
                     id="usrform"
                     className="form"
                 >
-                    <input type="hidden" name="contact" value="contact" />
+                    <input type="hidden" name="form-name" value="contact v1" />
                     <div>
                         <input
                             name="name"
