@@ -1,5 +1,6 @@
 * {
     margin: 0%;
+    padding: 0%;
 }
 html {
     scroll-behavior: smooth;
@@ -18,7 +19,7 @@ body {
     background-color: hsl(210, 10%, 15%);
     font-family: sans-serif;
     color: white;
-    padding: 20px;
+    padding: 20px 0px;
     border-bottom: 3px solid hsl(182, 100%, 40%);
     position: fixed;
     width: 100%;
@@ -108,8 +109,7 @@ body {
     padding-bottom: 10px;
 }
 .cardline {
-    position: relative;
-    left: calc(50% - 30px);
+    margin: 0 auto;
     width: 60px;
     height: 4px;
     background-color: hsl(330, 100%, 50%);
@@ -145,7 +145,7 @@ body {
     padding: 25px 0px;
 }
 .form {
-    margin: 50px;
+    margin: 50px 0px;
 }
 .inputbox {
     font-family: "Capriola", sans-serif;
@@ -195,6 +195,9 @@ body {
     font-size: 3.5rem;
     padding: 10px;
     background-color: hsl(330, 100%, 50%);
+}
+.to_top:hover {
+    background-color: hsl(182, 100%, 40%);
 }
 .foot {
     background-color: hsl(210, 10%, 15%);
