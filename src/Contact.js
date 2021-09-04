@@ -80,6 +80,7 @@ function Contact() {
                     target="_blank"
                     className="link5"
                     rel="noreferrer"
+                    title="linkedin"
                 >
                     <i className="fab fa-linkedin-in"></i>
                 </a>
@@ -88,6 +89,7 @@ function Contact() {
                     target="_blank"
                     className="link55"
                     rel="noreferrer"
+                    title="github"
                 >
                     <i className="fab fa-github"></i>
                 </a>
@@ -96,11 +98,12 @@ function Contact() {
                     target="_blank"
                     className="link555"
                     rel="noreferrer"
+                    title="gmail"
                 >
                     <i className="fas fa-envelope"></i>
                 </a>
             </div>
-            <a href="#home" className="to_top">
+            <a href="#home" className="to_top" title="home">
                 <i className="far fa-angle-double-up"></i>
             </a>
         </div>
