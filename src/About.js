@@ -9,7 +9,7 @@ function About() {
                     <div className="cardline"></div>
                     <div className="about_content flex">
                         <img
-                            src="./assets/img.png"
+                            src="./assets/pic.png"
                             alt="myimage"
                             className="image"
                         />
