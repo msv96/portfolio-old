@@ -56,7 +56,7 @@ function Contact() {
                     </div>
                     <div>
                         <label>
-                            Comments
+                            Message
                             <br />
                             <textarea
                                 rows="6"
