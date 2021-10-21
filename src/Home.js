@@ -5,12 +5,12 @@ function Home() {
         <>
             <div className="content" id="home">
                 <div className="intro">
-                    Hello, I'm <span className="myname">Srinivas</span>.
+                    Hello, I'm <span className="myname">Srinivasan M</span>.
                     <br />
                     A full stack web developer.
                 </div>
                 <a
-                    href="https://drive.google.com/file/d/1l9QeXd27c1imiMJbhtzPgpe19-jGgWn2/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1WW1-jrMzyZqd8L-Rug9ehVWVNRSJWbxT/view"
                     target="_blank"
                     rel="noreferrer"
                 >
@@ -18,7 +18,7 @@ function Home() {
                         View My Résumé
                     </button>
                 </a>
-                <a href="./assets/Srini Resume.pdf">
+                <a href="./assets/CV.pdf">
                     <button type="submit" className="btn btn2">
                         Download Résumé
                     </button>
