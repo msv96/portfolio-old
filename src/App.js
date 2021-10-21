@@ -9,16 +9,16 @@ function App() {
         <>
             <header className="header">
                 <nav className="toplist">
-                    <a href="#home" className="links">
+                    <a href="#home" className="active">
                         HOME
                     </a>
-                    <a href="#about" className="links">
+                    <a href="#about" className="">
                         ABOUT
                     </a>
-                    <a href="#projects" className="links">
+                    <a href="#projects" className="">
                         PROJECTS
                     </a>
-                    <a href="#contact" className="links">
+                    <a href="#contact" className="">
                         CONTACT
                     </a>
                 </nav>

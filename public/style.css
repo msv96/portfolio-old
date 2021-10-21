@@ -16,6 +16,8 @@ body {
     gap: 30px;
 }
 .header {
+    position: fixed;
+    width: 100vw;
     background-color: hsl(210, 10%, 15%);
     font-family: sans-serif;
     color: white;
@@ -28,13 +30,11 @@ body {
     text-align: center;
 }
 .toplist > a {
-    margin: 10px 30px;
-}
-.links {
+    padding: 20px 30px;
     text-decoration: none;
     color: white;
 }
-.links:hover {
+.toplist > a:hover, .toplist > a.active {
     color: hsl(330, 100%, 50%);
 }
 .content {
@@ -90,7 +90,6 @@ body {
 }
 .about1 {
     text-align: center;
-    padding-top: 50px;
     margin: 100px 0px 100px 0px;
 }
 .projects {
@@ -208,8 +207,8 @@ body {
     padding: 3rem;
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 576px) {
     .toplist > a {
-        margin: 10px;
+        padding: 20px 10px;
     }
 }
