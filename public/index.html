@@ -14,31 +14,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Capriola&family=Raleway:wght@100;200;300;400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Capriola&family=Raleway:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div id="root"></div>
-        <script>
-            $(document).ready(function () {
-                $('nav.toplist > a').click(function () {
-                    $('nav.toplist > a.active').removeClass('active');
-                });
-                $('nav.toplist > a').click(function () {
-                    $(this).addClass('active');
-                });
-                $('.to_top').click(function () {
-                    $('nav.toplist > a.active').removeClass('active');
-                    $('nav.toplist > a:first-child').addClass('active');
-                });
-            })
-        </script>
+        <script src="./script.js"></script>
     </body>
 
 </html>
